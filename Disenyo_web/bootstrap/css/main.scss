@@ -1,0 +1,108 @@
+$font_color: rgba(255, 255, 255, .7);
+$font_color_hover: white;
+$font_color_red:darkred;
+$font_color_black: black;
+
+//mixins
+@mixin linea($color:$font_color_red){
+    height: .5em;
+    width:3em;
+    background: $color;
+    margin: 2em 0;
+    border-radius: 15px;
+}
+@mixin boton($color_fuente,$color_fondo){
+    color: $color_fuente;
+    background-color: $color_fondo;
+    border-radius: 15px;
+    border-color: $color_fondo;
+    opacity: .7;
+    transition: .5s all;
+    font-weight: bold;
+        &:hover{
+            opacity:1;
+            background-color:$color_fondo;
+            border-color: $color_fondo;
+    }
+}
+body{
+}
+nav{
+    &.navbar{
+        position: fixed;
+        width: 100%;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid $font_color;
+        border-radius: 0;
+    }
+    &.navbar-default{
+        .navbar-nav>li>a{
+        color: $font_color;
+        transition: .5s all;
+            &:hover{
+                color: $font_color_hover;
+            }
+        }
+    .navbar-brand{
+        color: $font_color;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        }
+    }
+    collapse{
+    	color: $font_color;
+    	text-transform: uppercase;
+        font-size: .8em;
+        font-weight: bold;
+	}
+}
+#home{
+	.jumbotron{
+		margin-bottom: 0;
+		height: 1050px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background:{
+			image: url(../img/perrete.jpg);
+			size:cover;
+		}
+		h1{
+			color:$font_color_hover;
+			padding: 0 1em;
+			text-align: center;
+		}
+		#barra{
+		   @include linea();
+		}
+		p{
+			color:$font_color;
+			padding: 0 1em;
+		}
+		.btn-primary{
+			@include boton($font_color_hover, $font_color_red);
+			}
+	   	}
+		section#first{
+			#contenido{
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background-color: darkred;
+				color: $font_color_hover;
+				padding: 4em 2em;
+		#barra{
+			@include linea($font_color_hover)
+		} 
+		 .btn-primary{
+			@include boton($font_color_black, $font_color_hover);
+		}
+	}
+}
+}
+

@@ -1,0 +1,86 @@
+nav.navbar {
+  position: fixed;
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0; }
+nav.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: .5s all; }
+  nav.navbar-default .navbar-nav > li > a:hover {
+    color: white; }
+nav.navbar-default .navbar-brand {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 1.3em; }
+nav collapse {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: bold; }
+
+#home .jumbotron {
+  margin-bottom: 0;
+  height: 1050px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/perrete.jpg);
+  background-size: cover; }
+  #home .jumbotron h1 {
+    color: white;
+    padding: 0 1em;
+    text-align: center; }
+  #home .jumbotron #barra {
+    height: .5em;
+    width: 3em;
+    background: darkred;
+    margin: 2em 0;
+    border-radius: 15px; }
+  #home .jumbotron p {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 1em; }
+  #home .jumbotron .btn-primary {
+    color: white;
+    background-color: darkred;
+    border-radius: 15px;
+    border-color: darkred;
+    opacity: .7;
+    transition: .5s all;
+    font-weight: bold; }
+    #home .jumbotron .btn-primary:hover {
+      opacity: 1;
+      background-color: darkred;
+      border-color: darkred; }
+#home section#first #contenido {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkred;
+  color: white;
+  padding: 4em 2em; }
+  #home section#first #contenido #barra {
+    height: .5em;
+    width: 3em;
+    background: white;
+    margin: 2em 0;
+    border-radius: 15px; }
+  #home section#first #contenido .btn-primary {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    border-color: white;
+    opacity: .7;
+    transition: .5s all;
+    font-weight: bold; }
+    #home section#first #contenido .btn-primary:hover {
+      opacity: 1;
+      background-color: white;
+      border-color: white; }
+
+/*# sourceMappingURL=main.css.map */
